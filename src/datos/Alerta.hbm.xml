@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-dic-2013 15:07:59 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="datos.Alerta" table="alerta" catalog="bullying">
+        <id name="alertaId" type="java.lang.Integer">
+            <column name="alertaID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="estudianteByVictimaId" class="datos.Estudiante" fetch="select">
+            <column name="victimaID" not-null="true" />
+        </many-to-one>
+        <many-to-one name="estudianteByAgresorId" class="datos.Estudiante" fetch="select">
+            <column name="agresorID" not-null="true" />
+        </many-to-one>
+        <property name="descripcion" type="string">
+            <column name="descripcion" length="65535" not-null="true" />
+        </property>
+        <set name="pruebas" inverse="true">
+            <key>
+                <column name="alertaID" not-null="true" />
+            </key>
+            <one-to-many class="datos.Prueba" />
+        </set>
+    </class>
+</hibernate-mapping>

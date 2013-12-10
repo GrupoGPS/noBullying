@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-dic-2013 15:07:59 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="datos.Director" table="director" catalog="bullying">
+        <id name="directorId" type="java.lang.Integer">
+            <column name="directorID" />
+            <generator class="identity" />
+        </id>
+        <property name="nombreCompleto" type="string">
+            <column name="nombreCompleto" length="100" not-null="true" />
+        </property>
+        <property name="correo" type="string">
+            <column name="correo" length="100" not-null="true" />
+        </property>
+        <property name="telefono" type="int">
+            <column name="telefono" not-null="true" />
+        </property>
+        <set name="unidadeducativas" inverse="true">
+            <key>
+                <column name="directorID" not-null="true" />
+            </key>
+            <one-to-many class="datos.Unidadeducativa" />
+        </set>
+    </class>
+</hibernate-mapping>
