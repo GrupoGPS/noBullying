@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="6dp"
+        android:layout_y="6dp"
+        android:textColor="@android:color/black"
+        android:text="@string/lblinfalerta"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lbldescripcionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="6dp"
+        android:layout_y="52dp"
+        android:textColor="@android:color/black"
+        android:text="@string/lbldescripcion"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtdescripcionID"
+        android:layout_width="189dp"
+        android:layout_height="110dp"
+        android:layout_x="110dp"
+        android:textColor="@android:color/black"
+        android:layout_y="50dp"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="52dp"
+        android:layout_y="456dp"
+        android:textColor="@android:color/black"
+        android:text="@string/lblobligatorio"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="55dp"
+        android:textColor="@android:color/black"
+        android:layout_y="258dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="304dp"
+        android:layout_y="57dp"
+        android:textColor="@android:color/black"
+        android:text="@string/lblimportante"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="456dp"
+        android:textColor="@android:color/black"
+        android:layout_y="84dp"
+        android:text="@string/lblimportante"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="456dp"
+        android:layout_y="84dp"
+        android:textColor="@android:color/black"
+        android:text="@string/lblimportante"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnenviarID"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_x="195dp"
+        android:layout_y="404dp"
+        android:onClick="enviaralerta"
+        android:text="@string/btnEnviar" />
+
+    <Button
+        android:id="@+id/btncancelarID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="50dp"
+        android:layout_y="406dp"
+        android:text="@string/btncancelar" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="-6dp"
+        android:layout_y="158dp"
+        android:src="@drawable/slider" />
+
+</AbsoluteLayout>

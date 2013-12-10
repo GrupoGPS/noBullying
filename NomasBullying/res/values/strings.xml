@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World</string>
+    <string name="app_name">NoBuLLy</string>
+    <string name="txtbienvenida">Bienvenido...</string>
+    <string name="btnalertar">Alertar Bullying</string>
+    <string name="btnconocer">Conocer Sobre Bullying</string>
+    <string name="btnregistrar">Registrarse</string>
+    <string name="btnsalir">Salir</string>
+    <string name="lblinfalerta">Cuentenos acerca del Incidente</string>
+    <string name="lbldescripcion">Descripcion:</string>
+    <string name="lblobligatorio">Los campos con (*) son Obligatorios</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="btncancelar">Cancelar</string>
+    <string name="lblimportante">*</string>
+    <string name="lblcurso">Curso:</string>
+    <string name="lblgrado">Grado</string>
+    <string name="lblestudiante">Estudiante</string>
+    <string name="lblUnidadeducativa">U. E.</string>
+    <string name="lblparalelo">Paralelo</string>
+    <string name="lblconfigurarcolegio">Seleccione la Unidad Educativa o Colegio:</string>
+    <string name="lblResultado">Sin Resultados...</string>
+    <string name="lblVictima">Agredido:</string>
+    <string name="lblAgresor">Agresor:</string>
+    <string name="lblseleccione1">Cuentenos Aceca del Incidente</string>
+    <string name="btncontinuar">Continuar</string>
+    <string name="btnenviaralerta">Enviar Alerta Bullying</string>
+    <string name="btncargar">cargar</string>
+    <string name="lblvictima">Elija a la victima</string>
+    <string name="lblenviarvictima">presione Continuar.</string>
+    <string name="btncontinuarID">Continuar</string>
+    <string name="btncargarvictima">Cargar estudiantes</string>
+    <string name="lblelijaagresor">Elija al agresor</string>
+</resources>
