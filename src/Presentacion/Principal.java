@@ -238,7 +238,7 @@ public class Principal extends javax.swing.JFrame {
             alertas.setFormpricipal(this);
             alertas.setIconifiable(Boolean.TRUE);
             desktopPane.add(alertas);           
-            alertas.show();
+            alertas.setVisible(true);
         }
         
     }//GEN-LAST:event_cutMenuItemActionPerformed
