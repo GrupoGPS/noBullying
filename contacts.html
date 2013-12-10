@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contactenos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+    <script>
+		$(document).ready(function(){				   	
+			$('.slider')._TMS({
+				show:0,
+				pauseOnHover:true,
+				prevBu:'.prev',
+				nextBu:'.next',
+				playBu:false,
+				duration:800,
+				preset:'fade',
+				pagination:true,
+				pagNums:false,
+				slideshow:7000,
+				numStatus:false,
+				banners:false,
+				waitBannerAnimation:false,
+				progressBar:false
+			})		
+		});
+	</script>
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+</head>
+<body>
+  <div class="main">
+  <!--==============================header=================================-->
+    <header>
+        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <nav>  
+            <div id="slide">		
+                <div class="slider">
+                    <ul class="items">
+                        <li><img src="images/slider/contactenos/1.jpg" alt="" /></li>
+                        <li><img src="images/slider/contactenos/2.jpg" alt="" /></li>
+                        <li><img src="images/slider/contactenos/3.jpg" alt="" /></li>
+                    </ul>
+                </div>	
+                <a href="#" class="prev"></a><a href="#" class="next"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" class="clr-1">Inicio</a></li>
+                <li><a href="schedule.html" class="clr-3">Alertas de Bullying</a></li>
+                <li><a href="gallery.html" class="clr-4">Galeria</a></li>
+				<li><a href="about.html" class="clr-2">Acerca de...</a></li>
+                <li class="current"><a href="contacts.html" class="clr-5">Contactenos</a></li>
+            </ul>
+         </nav>
+    </header>   
+  <!--==============================content================================-->
+    <section id="content"><div class="ic"></div>
+        <div class="container_12">	
+          <div class="grid_4 bot-1">
+            <h2 class="top-6">Contactenos</h2>
+            <div class="map">
+              <iframe marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?ie=UTF8&amp;t=m&amp;source=embed&amp;hl=es&amp;oe=UTF8&amp;msa=0&amp;msid=212455424574158734658.0004cf250a55f74110bc9&amp;ll=-17.795516,-63.180024&amp;spn=0,0&amp;output=embed" scrolling="no" frameborder="0"></iframe>
+            </div>
+            <dl>
+                <dt>Calle Rene Moreno Nro 125, <br>Santa Cruz de la Sierra,Bolivia</dt>
+                <dd><span>Telefono: </span>+591-79866174</dd>
+                <dd><span>Correo Electronico: </span><a href="#" class="link">GPSOFTWARE@Gmail.com</a></dd>
+            </dl> 
+          </div>
+          <div class="grid_8">
+            <div class="block-1 top-5">
+            	<div class="block-1-shadow">
+                	<h2 class="clr-6">Formulario de Contacto</h2>
+                    <form id="form" method="post" >
+                      <fieldset>
+                        <label><strong>Nombre:</strong><input type="text" value=""><strong class="clear"></strong></label>
+                        <label><strong>E-Mail:</strong><input type="text" value=""><strong class="clear"></strong></label>
+                        <label><strong>Telefono:</strong><input type="text" value=""><strong class="clear"></strong></label>
+                        <label><strong>Mensaje:</strong><textarea></textarea><strong class="clear"></strong></label>
+                        <strong class="clear"></strong>
+                        <div class="btns pad-2"><a href="#" class="link-2">Limpiar</a><a href="#" class="link-2" onClick="document.getElementById('form').submit()">Enviar</a></div>
+                      </fieldset>  
+                    </form> 
+                </div>
+            </div>
+            <!--==============================footer=================================-->
+			<footer>
+                    <div class="social-list2">
+                        <a href="#"><img src="images/soc-icon-1.png" alt=""></a>
+                        <a href="#"><img src="images/soc-icon-2.png" alt=""></a>
+                        <a href="#"><img src="images/soc-icon-3.png" alt=""></a>             
+                    </div>                                      
+            </footer> 
+          </div>
+          <div class="clear"></div>
+        </div>
+    </section>    
+   </div>      
+</body>
+</html>
